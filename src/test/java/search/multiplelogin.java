@@ -21,7 +21,7 @@ public class multiplelogin {
 
 
         browser = playwright.chromium().launch(
-                new BrowserType.LaunchOptions().setHeadless(true)
+                new BrowserType.LaunchOptions().setHeadless(false)
         );
 
 
