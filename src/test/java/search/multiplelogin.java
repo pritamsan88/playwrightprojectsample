@@ -20,9 +20,7 @@ public class multiplelogin {
         playwright = Playwright.create();
 
 
-        browser = playwright.chromium().launch(
-                new BrowserType.LaunchOptions().setHeadless(false)
-        );
+        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
 
 
     }
@@ -64,9 +62,7 @@ public class multiplelogin {
 
                 try {
                     // Try to wait for the "no order" text
-                    noOrderText.waitFor(new Locator.WaitForOptions()
-                            .setTimeout(5000)
-                            .setState(WaitForSelectorState.VISIBLE));
+                    noOrderText.waitFor(new Locator.WaitForOptions().setTimeout(5000).setState(WaitForSelectorState.VISIBLE));
 
                     // If it appears, treat it as "no orders"
                     String text = noOrderText.textContent().trim();
