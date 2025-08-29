@@ -8,6 +8,12 @@
                     <include name="login"/>
                 </methods>
             </class>
+            <class name="search.menuselect">
+                <methods>
+                    <include name="menuselect">
+                    </include>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
